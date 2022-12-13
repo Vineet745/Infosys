@@ -1,0 +1,123 @@
+@media (max-width:600px) {
+    .container-1{
+        background-position: right;
+        border: 1px solid pink;
+    }
+    nav>h1 {
+        font-size: 8vw;
+        font-weight: 100;
+        
+    }
+    nav>ul>li {
+        display: none;
+    }    
+    .box {
+        width: 12vw;
+        height: 12vw;
+    
+}
+.line {
+    width: 5vw;
+    height: 0.8vw;
+    margin-bottom: 0.8vw;
+
+}
+.line2 {
+    width: 4vw;
+}
+section{
+    display: flex;
+    justify-content: center;
+    
+}
+section>h2 {
+    color: white;
+    font-size: 9vw;
+    width: 80vw;
+    line-height: 10vw;
+    font-weight: 600;
+   
+}
+section>button {
+    padding: 2vw 6vw;
+    border: 1px solid white;
+    font: 600 3vw "Montserrat";
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 1;
+    word-spacing: 2px;
+    margin-top: 5vw;
+
+}
+section>button::before {
+    height: 100%;
+    top: 0;
+    transition: 0.5s all ease;
+}
+.container-2{
+    flex-direction: column;
+}
+.left-container-2,
+.left-container-4 {
+    width: 100vw;
+    height: 30vh;
+    border: 2px solid red;
+}
+.left-container-2>h1,
+.left-container-4>h1 {
+    font: 600 8vw "Oswald";
+    margin-bottom: 1vw;
+    color: white;
+}
+
+
+.left-container-2>button,
+.left-container-4>button {
+    padding: 1vw 4.3vw;
+    font-size: 3vw;
+    letter-spacing: 0.3vh;
+
+}
+
+.left-container-2>button:hover,
+.left-container-4>button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.left-container-2>button::before,
+.left-container-4>button::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0vmax;
+    left: 0vmax;
+    height: 3.2vw;
+    top: 0;
+    transition: 0.5s all ease;
+}
+
+.left-container-2>button:hover::before,
+.left-container-4>button:hover::before {
+    width:100%;
+    cursor: pointer;
+    z-index: -1;
+
+}
+
+.left-container-2>p,
+.left-container-4>p {
+display: none;
+}
+
+
+
+
+.left-container-2-child,
+.left-container-4-child {
+   display: none;
+
+}
+}
