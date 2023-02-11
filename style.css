@@ -1,0 +1,1311 @@
+@font-face {
+    font-family:gilroy;
+    src: url(/font-family/Gilroy-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: gilroy;
+
+}
+
+#main{
+    overflow-x: hidden;
+}
+
+.container-1 {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(Images/1st\ container\ image.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid pink;
+}
+
+nav {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vh 0 8vh;
+    font-family: "myriad-pro";
+    color: white;
+    position: fixed;
+    top: 0;
+    /* border: 2px solid black; */
+}
+
+nav>h1 {
+    font-size: 2vw;
+    font-weight: 100;
+    
+    
+}
+
+nav>h1:hover {
+    cursor: pointer;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+nav>ul>li {
+    margin: 0 1.5vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: "myriad-pro";
+    cursor: pointer;
+}
+
+nav >ul >li:hover{
+    color: green;
+}
+
+.search-box {
+    font-size: 1.7vw;
+}
+
+.search-box:hover {
+    /* transform: scale(1.1); */
+    cursor: pointer;
+}
+
+.box {
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0.5vw;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.line {
+    width: 1.5vw;
+    height: 0.15vw;
+    background-color: black;
+    margin-bottom: 0.4vw;
+
+}
+
+.line2 {
+    width: 1vw;
+    margin-left: 1vw;
+    align-items: flex-end;
+    /* float: right; */
+}
+
+.box:hover .line2 {
+    margin-left: 0vw;
+    width: 1.4vw;
+}
+
+section {
+    width: 100vw;
+    height: 85vh;
+    padding-top: 10vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    padding-left: 8vw;
+    flex-direction: column;
+    margin-top: 15vh;
+
+}
+
+section>h2 {
+   color: white;
+   font-family:"Roboto Condensed";
+   font-size: 2.7vw;
+}
+
+section>button {
+    padding: 1vw 3vw;
+    border: 1px solid white;
+    font: 600 1vw "Montserrat";
+    margin-top: 2vw;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 1;
+    word-spacing: 2px;
+
+}
+
+section>button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+section>button::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0vmax;
+    left: 0vmax;
+    height: 3.3vw;
+    top: 0;
+    transition: 0.5s all ease;
+}
+
+section>button:hover::before {
+    width: 100%;
+    cursor: pointer;
+    z-index: -1;
+
+}
+
+.container-2 {
+    width: 100vw;
+    min-height: 100vh;
+    /* border: 2px solid black; */
+    background-color: rgb(223, 153, 38);
+    display: flex;
+}
+
+.left-container-2,
+.left-container-4 {
+    width: 50vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    padding: 8vw 7vw;
+}
+
+.left-container-2>h1,
+.left-container-4>h1 {
+    font: 500 3.6vw "Oswald";
+    margin-bottom: 1vw;
+    color: white;
+}
+
+.left-container-2>p,
+.left-container-4>p {
+    font: 400 1.3vw "Roboto Condensed";
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-bottom: 4vw;
+    color: white;
+}
+
+.left-container-2>button,
+.left-container-4>button {
+    padding: 1vw 4.3vw;
+    border: 1px solid white;
+    font: 600 1vw "Montserrat";
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 1;
+    word-spacing: 2px;
+
+}
+
+.left-container-2>button:hover,
+.left-container-4>button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.left-container-2>button::before,
+.left-container-4>button::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0vmax;
+    left: 0vmax;
+    height: 3.2vw;
+    top: 0;
+    transition: 0.5s all ease;
+}
+
+.left-container-2>button:hover::before,
+.left-container-4>button:hover::before {
+    width:100%;
+    cursor: pointer;
+    z-index: -1;
+
+}
+
+.left-container-2>h5,
+.left-container-4>h5 {
+    color: rgb(237, 196, 130);
+    margin-top: 2vw;
+    letter-spacing: 2px;
+}
+
+.left-container-2-child,
+.left-container-4-child {
+    margin-top: 2vw;
+    /* border: 1px solid black; */
+    display: flex;
+
+}
+
+.common-h1 {
+    color: white;
+    font: 600 1.8vw "Roboto Condensed";
+    margin-bottom: 1.5vmax;
+}
+
+.common-p {
+    color: white;
+    font: 100 1.3vw "myriad-pro";
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+.right-container-2,
+.right-container-4 {
+    width: 50vw;
+    height: 100vh;
+    /* border: 2px solid black; */
+    padding: 3vw 2vw;
+
+}
+
+.right-container-2>img,
+.right-container-4>img {
+    width: 40vw;
+    height: 40vw;
+    /* border: 2px solid black; */
+
+}
+
+
+.container-3 {
+    width: 100vw;
+    min-height: 100vh;
+    /* border: 2px solid black; */
+    background-color: rgb(15, 159, 250);
+    display: flex;
+}
+
+.right-container-3 {
+    width: 50vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    padding: 8vw 6vw;
+}
+
+.right-container-3>h1 {
+    font: 400 3.6vw "Oswald";
+    margin-bottom: 1vw;
+    color: white;
+}
+
+.right-container-3>p {
+    font: 400 1.3vw "Roboto Condensed";
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-bottom: 4vw;
+    color: white;
+}
+
+.right-container-3>button {
+    padding: 1vmax 4.3vw;
+    border: 1px solid white;
+    font: 600 1vw "Montserrat";
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 1;
+    word-spacing: 2px;
+
+}
+
+.right-container-3>button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.right-container-3>button::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0vmax;
+    left: 0vmax;
+    height: 3.3vw;
+    top: 0;
+    transition: 0.5s all ease;
+}
+
+.right-container-3>button:hover::before {
+    width: 100%;
+    cursor: pointer;
+    z-index: -1;
+
+}
+
+.right-container-3>h5 {
+    color: rgb(173, 222, 253);
+    margin-top: 2vw;
+    letter-spacing: 2px;
+}
+
+.right-container-3-child {
+    margin-top: 2vw;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.right-container-3-child-content1 {
+    /* border: 2px solid black; */
+    width: 30vw;
+}
+
+.common-h1 {
+    color: white;
+    font: 600 1.8vw "Roboto Condensed";
+    margin-bottom: 1.5vw;
+}
+
+.common-p {
+    color: white;
+    font: 300 1.3vw "serif";
+}
+
+.left-container-3 {
+    width: 50vw;
+    height: 100vh;
+    /* border: 2px solid black; */
+
+}
+
+.left-container-3>img {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    padding-top: 2vw;
+
+}
+.container-4 {
+    width: 100vw;
+    min-height: 100vh;
+    /* border: 2px solid black; */
+    background-color: rgb(150, 53, 150);
+    display: flex;
+}
+
+.left-container-4>h5 {
+    color: rgb(221, 190, 221);
+    margin-top: 2vw;
+    letter-spacing: 2px;
+}
+
+.left-container-4-child-content1 {
+    width: 20vw;
+    /* border: 2px solid black; */
+}
+
+.container-5 {
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+.container-5-tophead {
+    width: 100vw;
+    min-height: 40vh;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container-5-tophead>h1 {
+    font: 400 4vw "Oswald";
+    letter-spacing: 1px;
+}
+
+.container-5-tophead>p {
+    font: 100 3vw "myriad-pro";
+    color: rgb(134, 134, 134);
+    letter-spacing: 1px;
+
+}
+
+.image-container-5 {
+    /* border: 2px solid black; */
+    width: 100%;
+    min-height: 100vh;
+    margin: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container-child-5 {
+    height: 90vh;
+    width: 90vw;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.left-container-5 {
+    width: 48vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid green; */
+}
+
+.left-container-5>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.overlay {
+    position: absolute;
+    transition: 0.5s all linear;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.514);
+    /* padding: 1vmax 2vmax; */
+
+
+}
+
+.left-container-5:hover .overlay,
+.img-one:hover .overlay,
+.img-two:hover .overlay {
+    height: 100%;
+}
+
+
+
+.left-container-5:hover .overlay-content>h3,
+.img-one:hover .overlay-content>h3,
+.img-two:hover .overlay-content>h3 {
+    position: absolute;
+    bottom: 90%;
+}
+
+.left-container-5:hover .overlay-content>h4,
+.img-one:hover .overlay-content>h4,
+.img-two:hover .overlay-content>h4 {
+    display: initial;
+}
+
+
+.left-container-5:hover .overlay-content>h5,
+.img-one:hover .overlay-content>h5,
+.img-two:hover .overlay-content>h5 {
+    display: initial;
+
+}
+
+.overlay-content {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    padding: 1vmax;
+
+}
+
+.overlay-content>h3 {
+    font: 800 2vw "Arial";
+    margin-bottom: 1vmax;
+    position: absolute;
+    bottom: 5%;
+
+
+}
+
+.overlay-content>h4 {
+    font: 700 1.4vw "Arial";
+    /* position: absolute;
+bottom: -2%; */
+    letter-spacing: 0.5px;
+    display: none;
+
+
+}
+
+.overlay-content>h5 {
+
+    font: 200 1.3vw "Arial";
+    display: none;
+
+}
+
+
+
+.right-container-5 {
+    width: 52vw;
+    height: 100vh;
+    display: flex;
+}
+
+.right-container-5-one,
+.right-container-5-two {
+    width: 50vw;
+    height: 100vh;
+    /* border: 1px solid aqua; */
+}
+
+.img-one,
+.img-two {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.img-one>img,
+.img-two>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-one h3,
+.img-two h3 {
+    /* padding: 1vmax 0; */
+    font: 800 1.3vmax "Arial";
+}
+
+
+
+.container-5-services {
+    width: 100vw;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8vw;
+    display: flex;
+    margin-top: 5vw;
+
+}
+
+.common-5 {
+    width: 15vw;
+    /* border: 2px solid black; */
+    text-align: center;
+
+}
+.common-5 h1{
+    font-size: 2vw;
+}
+
+.plugin {
+    border-radius: 50%;
+    width: 20%;
+    height: 10%;
+    border: 2px solid black;
+    background-color: black;
+    margin: 1vmax auto;
+
+}
+
+.plus {
+    color: white;
+    font: 900 2vw "serif";
+
+    /* border-radius: 80%; */
+    /* margin: auto; */
+    transition: .4s all ease-in-out;
+    text-align: center;
+}
+
+.plus:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+
+}
+.container-6 {
+    width: 100vw;
+    min-height: 100vh;
+    /* border: 2px solid black; */
+    margin-top: 2vw;
+}
+
+.container-6-img-parent {
+    width: 85vw;
+    height: 60vh;
+    /* border: 2px solid black; */
+    margin: 2vmax auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container-6-img {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(Images/infosys-atp-wta-live-app\ container-6.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 1s all 0.2s linear;
+    /* border: 2px solid black; */
+    padding: 2vw 5vw;
+    position: relative;
+
+
+}
+
+.container-6-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container-6-img>h1 {
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 15%;
+    font: 900 2.5vmax "Arial";
+}
+
+.container-6-img>button {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    padding: 0.8vmax 3vmax;
+    font: 600 1.2vmax "Arial";
+}
+
+.container-6-img>button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.con6-b {
+    margin-top: 5vmax;
+    width: 85vw;
+    height: 40vh;
+    border: 2px solid rgb(146, 209, 255);
+    border-radius: 0 35px 0 35px;
+    margin: 5vw auto;
+    text-align: center;
+}
+
+.con6-b>h3 {
+    font: 800 5vw "Oswald";
+    margin-bottom: 2vw;
+
+}
+
+.con6-b>p {
+    font: 400 2.4vw "Arial";
+}
+
+.container-7 {
+    width: 100vw;
+    min-height: 70vh;
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 5vmax;
+}
+
+.container-7>h1 {
+    font: 500 3.3vw "Oswald";
+}
+
+.container-7>p {
+    font: 100 40px "Arial";
+    margin-top: 1vw;
+    color: rgb(139, 139, 139);
+}
+
+.container-7-child {
+    width: 80vw;
+    margin: 2vw auto;
+    /* margin-top: 2vmax; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.con7-grandchild>h1 {
+    font: 800 3.4vw "Arial";
+
+}
+
+.con7-grandchild span {
+    font: 200 2vw "Arial";
+    margin-left: -1vmax;
+}
+
+.con7-grandchild>p {
+    color: rgb(77, 77, 77);
+    margin-top: 1vmax;
+}
+
+
+.container-8 {
+    /* border: 2px solid black; */
+    width: 85vw;
+    height: 100vh;
+    margin: 3vw auto;
+    display: flex;
+
+}
+
+.left-cont-8 {
+    width: 40vw;
+    height: 99vh;
+    background-color: rgb(223, 153, 38);
+    padding: 2vw;
+    color: white;
+}
+
+.left-cont-8>h4 {
+    font: 800 2.5vw "Arial";
+    margin-bottom: 0.5vw;
+
+}
+
+.container-8-para {
+    display: flex;
+    align-items: center;
+    /* justify-content:center; */
+    /* border: 2px solid black; */
+    
+}
+
+.container-8-para>p {
+    margin: 2vw 0;
+    font: 400 1.1vmax "Arial";
+    letter-spacing: 1px;
+    line-height: 1.4vw;
+
+
+}
+
+.container-8-para>span {
+    font-size: 2.2vw;
+    transition: 0.3s all linear;
+
+}
+
+.container-8-para>span:hover {
+    cursor: pointer;
+    transform:translateX(50%);
+}
+
+.left-cont-8 hr {
+    height: 0.5px;
+}
+
+.cont-8-bottom-box {
+    width: 100%;
+    height: 23vh;
+    background-color: rgba(19, 18, 18, 0.404);
+    margin-top: 2vmax;
+    padding: 1vmax 3vmax;
+}
+
+.cont-8-bottom-box>h3 {
+    font: 300 1.4vmax "Arial";
+    line-height: 2vmax;
+    letter-spacing: 1px;
+
+}
+
+.right-cont-8 {
+    width: 60%;
+    height: 99vh;
+    display: flex;
+
+}
+
+.right-cont-8-one,
+.right-cont-8-two {
+    width: 50%;
+    height: 99vh;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.first-image {
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/quarterly-results-q1fy23-thumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 2vmax 2vmax;
+    transition: 0.5s all linear;
+
+}
+
+.first-image>h1 {
+    color: white;
+    margin-bottom: 1vmax;
+    font: 600 2.4vw "Arial";
+}
+
+.first-image>p {
+    color: white;
+    font: 300 1.4vw "Arial";
+
+
+}
+
+.first-image:hover {
+    transform: scale(1.1);
+}
+
+.first-image-parent {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.first-image-parent h1 {
+    font-weight: 200;
+    font-size: 1.8vmax;
+}
+
+.container-9,
+.container-10 {
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.container-9>h1,
+.container-10>h1 {
+    font: 500 50px "Montserrat";
+    margin-top: 0.3vw;
+    letter-spacing: 2px;
+}
+
+.container-9>p,
+.container-10>p {
+    font: 300 30px "Arial";
+    margin: 2vw 0;
+    letter-spacing: 2px;
+    color: rgb(77, 77, 77);
+}
+
+.container-9-child {
+    display: flex;
+    width: 85vw;
+    height: 70vh;
+    margin: 5vw auto;
+    /* border: 2px solid black; */
+}
+
+.left-con-9-parent {
+    width: 65vw;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.left-con9 {
+    width: 100%;
+    height: 100%;
+    transition: 1s all linear;
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/banner-images/annual-report-2022-mob.png);
+    background-position: center;
+    background-size: cover;
+}
+.left-con9>h3{
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    color: white;
+    font: 600 2vmax "Oswald";
+}
+
+.left-con9:hover {
+    transform: scale(1.1);
+}
+
+.left-con9>img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-con9 {
+    width: 35vw;
+    height: 70vh;
+    padding: 1vmax;
+    text-align: left;
+}
+
+.right-con9>h1 {
+    font: 900 3vw "Arial";
+    margin-bottom: 1vmax;
+}
+
+.text-9 {
+    margin: 2vw 0;
+}
+
+.text-9>h4 {
+    margin-bottom: 1vw;
+    color: rgb(181, 181, 181);
+}
+
+.text-9>h3 {
+    margin-bottom: 1vw;
+    font: 100 1.7vw "Serif";
+    color: rgb(51, 51, 51);
+
+}
+
+.text-9>h5 {
+    margin-top: 3vw;
+    color: rgb(89, 158, 238);
+    font: 600 1vmax "Arial";
+}
+
+
+
+
+.second-image {
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/esg-report-2022-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1vmax 1.5vmax;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s all linear;
+}
+
+.second-image:hover {
+    transform: scale(1.1);
+}
+
+.first-image-1 {
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/future-work-report.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1vmax 1.5vmax;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s all linear;
+}
+
+.first-image-1:hover {
+    transform: scale(1.1);
+}
+
+.second-image-1 {
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/responsive/newdesign/cloud-applications-research.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1vmax 1.5vmax;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s all linear;
+}
+
+.second-image-1:hover {
+    transform: scale(1.1);
+}
+
+.container-10 {
+    width: 100%;
+    min-height: 130vh;
+    /* border: 2px solid black; */
+
+
+}
+
+.container-10-img-parent {
+    width: 85%;
+    height: 60vh;
+    /* border: 2px solid black; */
+    margin: 2vmax auto;
+    position: relative;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+.container-10img {
+    width: 100%;
+    height: 60vh;
+    /* margin: auto; */
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/careers-video-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s all linear;
+    /* border: 2px solid green; */
+
+}
+
+.container-10img:hover {
+    transform: scale(1.1);
+}
+
+.container-10img>h4 {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    color: rgb(225, 247, 255);
+    font: 100 1.7vmax "Arial";
+    letter-spacing: 1px;
+}
+
+.container-10-profile {
+    width: 30vmax;
+    height: 30vh;
+    background-color: rgb(243, 243, 243);
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.profile-box {
+    width: 20%;
+}
+
+.profile-box>img {
+    width: 100%;
+}
+
+.writing {
+    width: 60%;
+    /* border: 2px solid black; */
+    margin-left: 1vmax;
+    text-align: left;
+}
+
+.writing>h5 {
+    font: 800 1vmax "Arial";
+    margin-bottom: 1vmax;
+}
+
+.writing>p {
+    width: 100%;
+    font: 200 1vmax "Arial";
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 20px;
+
+}
+
+.Suggestion {
+    width: 85%;
+    height: 30vh;
+    /* border: 2px solid black; */
+    margin: 4vmax auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Suggestion>h3 {
+    font: 200 2vmax "Arial";
+    margin-bottom: 1vmax;
+    letter-spacing: 1px;
+}
+
+.Suggestion>button {
+    padding: 0.8vmax 2vmax;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.Suggestion>button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px soild black;
+    color: rgb(32, 31, 31);
+}
+
+.container-11 {
+    min-height: 80vh;
+    width: 100vw;
+    /* border: 2px solid black; */
+    background-color: rgb(150, 53, 150);
+    padding: 2vmax 7vmax;
+    display: flex;
+    border-bottom: 5px solid rgb(216, 216, 216);
+}
+
+.left-con-11 {
+    width: 50vw;
+    height: 80vh;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.left-con-11-one {
+    width: 50%;
+    height: 100%;
+}
+
+.Americas {
+    width: 100%;
+    height: 50%;
+    border: 1px solid rgb(171, 93, 171);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 100 10px "Arial";
+}
+
+.Americas:hover {
+    background-color: rgba(206, 206, 193, 0.486);
+}
+
+.right-con-11 {
+    width: 50vw;
+    height: 80vh;
+    /* border: 2px solid black; */
+    padding: 2vmax 5vmax;
+}
+
+.right-con-11>h1 {
+    font: 900 4vw "Arial";
+    color: white;
+    margin-bottom: 2vw;
+}
+
+.right-con-11>button {
+    padding: 0.8vw 2.6vw;
+    background-color: black;
+    color: white;
+    font: 600 1.1vw "Arial";
+    letter-spacing: 1px;
+}
+
+.right-con-11>button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
+
+.footer {
+    width: 100vw;
+    min-height: 70vh;
+    background-color: rgb(248, 248, 248);
+    padding: 3vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-child-1>h3 {
+    font: 800 22px "Arial";
+    margin-bottom: 1vw;
+
+}
+
+.footer-child-1>p {
+    font: 500 17px "myriad-pro";
+    margin-bottom: 1vw;
+    color: rgb(63, 63, 146);
+}
+
+.footer-child-1>img {
+    margin: 1vw;
+}
+
+.bottom-footer {
+    background-color: white;
+    width: 100vw;
+    height: 10vh;
+    padding: 0 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bottom-footer>p {
+    font-size: 1.3vw;
+}
+.drop-down{
+    /* background-color: green; */
+    padding: 1vw 2vw;
+    font: 300 1.4vw "serif";
+    border: 2px solid black;
+}
+.drow-down option{
+    padding: 2vw;
+}
+
+
+.bottom-arrow{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    box-shadow: 1px 1px 3px grey;
+    background-color: rgb(240,238,237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+.bottom-arrow >i{
+    font-size: 3vw;
+}
+.bottom-arrow:hover{
+cursor: pointer;
+}

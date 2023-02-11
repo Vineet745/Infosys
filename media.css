@@ -1,0 +1,320 @@
+@media (max-width:600px) {
+    .container-1{
+        background-position: center;
+        border: 1px solid pink;
+    }
+    nav>h1 {
+        font-size: 8vw;
+        font-weight: 100;
+        
+    }
+    nav>ul>li {
+        display: none;
+    }    
+    .box {
+        width: 12vw;
+        height: 12vw;
+    
+}
+.line {
+    width: 5vw;
+    height: 0.8vw;
+    margin-bottom: 0.8vw;
+
+}
+.line2 {
+    width: 4vw;
+}
+section{
+    display: flex;
+    justify-content: center;
+    
+}
+section>h2 {
+    color:white;
+    font-size: 9vw;
+    width: 80vw;
+    line-height: 10vw;
+    font-weight: 600;
+   
+}
+section>button {
+    padding: 2vw 6vw;
+    border: 1px solid white;
+    font: 600 3vw "Montserrat";
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 1;
+    word-spacing: 2px;
+    margin-top: 5vw;
+
+}
+section>button::before {
+    height: 100%;
+    top: 0;
+    transition: 0.5s all ease;
+}
+.container-2,.container-3,.container-4{
+    flex-direction: column;
+}
+.left-container-2,
+.left-container-4,
+.right-container-3 {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.left-container-2>h1
+ {
+    font: 600 12vw "montserrat";
+    margin-bottom: 1vw;
+    color: white;
+}
+
+
+.left-container-2>button,
+.left-container-4>button,
+.right-container-3>button {
+    padding: 2vw 7vw;
+    font-size: 3vw;
+    letter-spacing: 0.3vh;
+
+}
+
+.left-container-2>button:hover,
+.left-container-4>button:hover,
+.right-container-3>button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.left-container-2>button::before,
+.left-container-4>button::before,
+.right-container-3>button::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0vmax;
+    left: 0vmax;
+    height:100%;
+    top: 0;
+    transition: 0.5s all ease;
+}
+
+.left-container-2>button:hover::before,
+.left-container-4>button:hover::before,
+.right-container-3>button:hover::before {
+    width:100%;
+    cursor: pointer;
+    z-index: -1;
+
+}
+
+.left-container-2>p,
+.left-container-4>p,
+.right-container-3>p {
+display: none;
+}
+
+
+
+
+.left-container-2-child,
+.left-container-4-child,
+.right-container-3-child {
+   display: none;
+
+}
+.right-container-2,.left-container-3,.right-container-4{
+    width: 100vw;
+    height: 60vh;
+}
+.right-container-2 img,.left-container-3 img,.right-container-4 img{
+    width: 100%;
+    height: 100%;
+    object-position: right;
+    object-fit: cover;
+}
+.right-container-3>h1,.left-container-4> h1{
+    font-size: 9vw;
+    font-family: montserrat;
+}
+.container-5-tophead{
+     justify-content: flex-start;
+     padding-top: 3vh;
+     min-height: 30vh;
+}
+.container-5-tophead h1{
+    font-size: 10vw;
+    margin-bottom: 3vh;
+}
+.container-5-tophead p{
+    font-size: 5vw;
+}
+.image-container-5{
+    display: flex;
+    flex-direction: column;
+}
+.image-container-child-5{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-container-5{
+    width: 90vw;
+}
+.right-container-5{
+    width: 100vw;
+    flex-direction: column;
+}
+.right-container-5-one{
+    display: none;
+}
+.right-container-5-two{
+    width: 100vw;
+    
+}
+.overlay-content h3{
+    font-size: 4vh;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+.overlay-content h4{
+    font-size: 3vh;
+}
+.overlay-content h5{
+    font-size: 3vh;
+}
+.container-5-services{
+    display: none;
+}
+.container-6{
+    min-height: 80vh;
+}
+.container-6-img-parent{
+    width: 100vw;
+}
+.container-6-img{
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    transition: 1s all 0.2s linear;
+    /* border: 2px solid black; */
+    padding: 2vw 5vw;
+    position: relative;
+
+}
+.container-6-img h1{
+    font-size: 3vh;
+}
+.container-6-img button{
+    font-size: 2vh;
+}
+.con6-b{
+    height: 20vh;
+}
+.con6-b h3{
+    font-size: 5vh;
+}
+.con6-b p{
+    font-size: 2.5vh;
+}
+.container-7 h1{
+font-size: 4vh;
+}
+.container-7>p{
+    font-size: 4vh;
+    margin-top: 2vh;
+}
+.container-7-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-8{
+    display: none;
+}
+.container-9-child{
+    flex-direction: column;
+}
+.left-con-9-parent{
+    width: 100vw;
+}
+.left-con9 h3{
+    font-size: 2vh;
+    font-family: gilroy;
+}
+.right-con9{
+    width: 90vw;
+}
+.right-con9 h1{
+    font-size: 3vh;
+}
+.text-9 h4{
+  font-size: 3vh;
+}
+.text-9 h3{
+    font-size: 2.5vh;
+  }
+  .text-9 h5{
+    font-size: 2.5vh;
+  }
+  .container-10{
+    min-height: 80vh;
+  }
+  .container-10 p{
+    font-size: 3vh;
+  }
+  .Suggestion{
+    height: 20vh;
+  }
+  .container-11{
+    flex-direction: column;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .left-con-11{
+    flex-direction: column;
+    width: 80vw;
+  }
+  .left-con-11-one{
+    width: 100%;
+    padding: 0vw 1vw;
+  }
+  .right-con-11{
+    width: 80vw;
+    height: 40vh;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .right-con-11 h1{
+font-size: 4vh;
+  }
+  .right-con-11 button{
+    font-size: 2vh;
+    margin-top: 2vh;
+  }
+  .footer{
+    flex-direction:column ;
+  }
+  .footer-child-1{
+    padding-left: 2vh;
+    
+  }
+  .bottom-footer{
+    display: none;
+  }
+
+}
